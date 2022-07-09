@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 const UserItem = ({ user: { login, avatar_url } }) => {
   return (
-    <div className="card shadow-md compact side bg-base-100">
+    <Link
+      to={`/users/${login}`}
+      className="card shadow-md compact side bg-base-100 hover:shadow-lg cursor-pointer"
+    >
       <div className="flex-row items-center space-x-4 card-body">
         <div>
           <div className="avatar">
@@ -14,15 +17,10 @@ const UserItem = ({ user: { login, avatar_url } }) => {
         </div>
         <div>
           <h2 className="card-title">{login}</h2>
-          <Link
-            className="text-base-content text-opacity-40"
-            to={`/users/${login}`}
-          >
-            Visit Profile
-          </Link>
+          <p className="text-base-content text-opacity-40">Visit Profile</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
