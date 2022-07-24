@@ -1,6 +1,8 @@
 # WARNING
 If you want to run the app locally, you need to create your own **Personal Acces Token** on Github (https://github.com/settings/tokens) and select **repo** and **users** scopes. Copy generated token and paste it in **.env** file which is located in root.
 
+Visit app on https://github-finder-strla.vercel.app/ to run it in your browser.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
